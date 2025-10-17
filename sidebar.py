@@ -12,7 +12,7 @@ def configure_sidebar():
     st.sidebar.header("📄 Select File")
     # sidebar.py
     # sidebar.py (update file uploader line)
-    st.sidebar.file_uploader("Upload your PDF or Word Document", type=["pdf", "docx"], key="file")
+    st.sidebar.file_uploader("Upload your PDF / Word Document", type=["pdf", "docx"], key="file")
     st.sidebar.header("🛠️ Select Task")
     task = st.sidebar.radio("Choose action", ["Summarize", "Chat with Document"], key="task")
     return {"model": model, "device": device, "vlm": vlm, "task": task}
