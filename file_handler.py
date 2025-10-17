@@ -21,7 +21,7 @@ def handle_file_upload():
             try:
                 os.remove(file_path)
             except PermissionError:
-                st.error("File is in use. Please close it & try again.")
+                st.error("File is in use. Please close it and try again.")
                 return None
 
         # Save the uploaded file
