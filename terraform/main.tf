@@ -1,8 +1,3 @@
-# Configure the AWS provider to use the specified region
-provider "aws" {
-  region = "ap-south-2"
-}
-
 # -----------------------------------------------------------------------------
 # IAM ROLE FOR EC2 TO ACCESS ECR
 # This gives the EC2 instance permissions to pull images from the ECR repository.
