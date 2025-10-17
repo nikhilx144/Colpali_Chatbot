@@ -92,6 +92,10 @@ resource "aws_instance" "web_server" {
   # Use the affordable t3.micro instance type
   instance_type = "t3.micro"
 
+  root_block_device {
+    volume_size = 30 # Size of the root volume in gigabytes
+  }
+
   # Associate the IAM instance profile created above
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
 
