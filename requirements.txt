@@ -1,0 +1,11 @@
+streamlit
+openai
+byaldi
+torch
+pypandoc
+gtts
+Pillow
+dotenv
+deep-translator
+sentence-transformers
+scikit-learn
